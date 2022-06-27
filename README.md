@@ -143,6 +143,5 @@ Tool Recommendation: Firefox Browser (easier to make screenshots)
 10. Use markdown to place the image wherever you need:
 
 ```
-!["Alt test for accessibility"](/img/name-of-the-
-```image.png)
+!["Alt test for accessibility"](/img/name-of-the-image.png)
 ```
