@@ -66,20 +66,19 @@ This command generates static content in the `build/` directory and can be serve
 
 To build and deploy to GitHub Pages:
 
+1. Create a personal access token (PAT). Follow instructions found here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
-1. Create a personal access token (PAT).  Follow instructions found here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
-    * Select repo scope for the token
-    * Copy the PAT
+   - Select repo scope for the token
+   - Copy the PAT
 
 2. Add the personal access token as a secret to your repo
-    * Click Settings Tab
-    * Select Secrets->Actions
-    ![](static/img/secrets1.png)
-    * Create a new repository secret
-    * Name the secrete OER_DEPLOY
-    * Paste the PAT from previous step into the Value box
-    ![](static/img/secrets2.png)
-
+   - Click Settings Tab
+   - Select Secrets->Actions
+     ![](static/img/secrets1.png)
+   - Create a new repository secret
+   - Name the secrete OER_DEPLOY
+   - Paste the PAT from previous step into the Value box
+     ![](static/img/secrets2.png)
 
 #### A Shortcut To Update Your gh-pages:
 
@@ -144,5 +143,6 @@ Tool Recommendation: Firefox Browser (easier to make screenshots)
 10. Use markdown to place the image wherever you need:
 
 ```
-!["Alt test for accessibility"](/img/name-of-the-image.png)
+!["Alt test for accessibility"](/img/name-of-the-
+```image.png)
 ```
