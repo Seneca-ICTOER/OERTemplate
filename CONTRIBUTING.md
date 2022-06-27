@@ -64,7 +64,7 @@ This command generates static content in the `build/` directory and can be serve
 
 ### Deployment
 
-#### First Deployment
+To build and deploy to GitHub Pages:
 
 
 1. Create a personal access token (PAT).  Follow instructions found here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
@@ -84,6 +84,7 @@ This command generates static content in the `build/` directory and can be serve
 #### A Shortcut To Update Your gh-pages:
 
 To deploy your updates to Github Pages, run:
+
 
 - For Bash:
 
