@@ -66,25 +66,19 @@ This command generates static content in the `build/` directory and can be serve
 
 #### First Deployment
 
-1. If you are deploying for the first time, you will need to first create a gh-pages branch. In your local repo perform following commands:
 
-```
-git checkout --orphan gh-pages
-git reset
-git commit --allow-empty -m "create gh-pages branch"
-git push origin gh-pages
-git checkout main
-```
-
-2. The above will create and push a gh-pages branch into your repo.  Once this is done, turn on github pages in your repo using the gh-pages branch.
-
-3. Create a personal access token (PAT).  Follow instructions found here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+1. Create a personal access token (PAT).  Follow instructions found here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
     * Select repo scope for the token
     * Copy the PAT
 
-4. Add the personal access token as a secret to your repo
-
-5. Change .github/workflows/deploy.yaml file to make use of secret from step 4(change the name to match your secret)
+2. Add the personal access token as a secret to your repo
+    * Click Settings Tab
+    * Select Secrets->Actions
+    ![](static/img/secrets1.png)
+    * Create a new repository secret
+    * Name the secrete OER_DEPLOY
+    * Paste the PAT from previous step into the Value box
+    ![](static/img/secrets2.png)
 
 
 #### A Shortcut To Update Your gh-pages:
