@@ -9,21 +9,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
           cache: 'yarn'
-      - run: |
-          if [ -e yarn.lock ]; then
-            yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-            npm ci
-          else
-            npm i
-          fi
-      - uses: webfactory/ssh-agent@v0.5.3
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Build website
+        run: yarn build
+
+      # Popular action to deploy to GitHub Pages:
+      # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          # Change this to match the name you gave your secrets
           github_token: ${{ secrets.OER_DEPLOY }}
           # Build output to publish to the `gh-pages` branch:
           publish_dir: ./build
@@ -34,4 +33,3 @@ jobs:
           # You can swap them out with your own user credentials.
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
-
