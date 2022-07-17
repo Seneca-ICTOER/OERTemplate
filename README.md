@@ -13,8 +13,8 @@ This template repository is set up for you to create and deploy an OER customize
 
   This is a screenshot of the recommended set of settings for an initial repository:
 
+![](static/img/templatesettings.png)
 
-  
 
 Once you are happy with your settings, hit the Create repository from template button.
 
@@ -40,15 +40,32 @@ To generate a repository secrete for the deployment script:
    * You will likely see a red x beside a run labelled Initial commit
    * Click the Initial Commit link
    * Hit the rerun jobs button
-   
-Remember to update the following files as you see fit:
 
-a) LICENSE.md
-b) CONTRIBUTE.md
-c) README.md
-d) package.json (name)
-e) docusaurus.config.js
-f) CNAME 
+## Files that Require changes:
+
+* CNAME
+    * CNAME needs to be changed to match the deployment url of your books.  If your book is part of the ICTOER org, then change:
+    ```seneca-ictoer.github.io/oertemplate/``` to ```seneca-ictoer.github.io/yourRepoName/```
+* package.json 
+    * Change the name field to match your repo name
+* docusaurus.config.js
+    * Multiple fields that refer to this template needs to change to refer to your repository
+
+
+## Files that you should review
+* LICENSE.md - Current license is a generic license.  Please update to suit your needs
+* CONTRIBUTE.md - Rewrite to match your contribution workflow
+* README.md - These instructions should modify to suit your OER's intentions
+
+## Prettier
 
 Remember to run prettier after you make the changes to your files
+
+## Writing your OER
+
+* To add content to your OER, edit the files in the docs folder.
+* You can add folders and more md files if you wish
+* Save, add, commit and push your updated files back into github
+* Doing this will automatically start the deployment script which will build the Docusaurus based OER.  The URL should be that found in CNAME (although if you didn't change it there will be an error, the url can be found in the repos setting tab->pages)
+* **The published page is public, even if your repo is private**
 
