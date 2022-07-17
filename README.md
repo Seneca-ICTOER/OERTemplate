@@ -1,147 +1,54 @@
-# Contributing
+# README
 
-Thanks for your interest in helping us maintain our course notes! We are happy to consider contributions from faculty and students to help make these notes easier to use and improve their correctness.
+This template repository is set up for you to create and deploy an OER customized for Seneca College ITAS/SDDS.  To create a repo based on this template:
 
-## Requirements
 
-These notes are built using [Docusaurus](https://docusaurus.io/), a modern static website generator. To use it, you'll need to have the following installed:
+1. Click on the green "Use this template" button near top right corner of code tab
 
-- an [LTS version of node.js](https://nodejs.org/en/), which can be checked by running `node -v`. Currently that's node.js 14.x, but confirm with the official site.
+2. You will see a page that will let you do some customization.  Here are the settings you will want to pay attention to:
+  * **Owner** - by default, the owner is set to your account, thus the OER will be created under your github account.  If you wish it to be part of the Seneca-ICTOER organization, change this from the drop down menu
+  * **Repository Name** - If the OER is used by just one course, the course code can be a good name for this repository.  If the OER is used by multiple courses, it is best to use a descriptive name that is applicable for all courses that will use the OER
+  * **Public vs Private** - Your repository can be private but when notes are deployed, they will become public, the notes website will be public regardless of the privacy setting for this repository.  Whether the repo is public or private can be changed later so if you are not sure you can start with repo being private and make the change once your repository is in a state where you wish to share it.
+  * **Include all branches** checkbox.  It is recommended that this remains unchecked as it is unlikely that the other branches of this template repository will be useful to you.
 
-- The [yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable) package manager, version >= 1.5 (which can be checked by running `yarn --version`).
+  This is a screenshot of the recommended set of settings for an initial repository:
 
-- [Visual Studio Code](https://code.visualstudio.com/). This is not strictly necessary, but we encourage it since we use various extensions to make working on the site easier.
 
-## Installation
+  
 
-To install the dependencies, use:
+Once you are happy with your settings, hit the Create repository from template button.
 
-```console
-yarn install
-```
+When you first create your repository, the deployment script will run automatically.  However, it will likely fail as you will need to generate a repository secret for deploying the OER first.
 
-## Local Development
-
-To develop the site, use:
-
-```console
-yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Workflows
-
-If you want to make a change, please use the following GitHub workflow:
-
-1. fork this repo on GitHub
-1. clone your forked repo to your local machine, `git clone https://github.com/{your username}/Intro2C`
-1. create a new branch off of the `main` branch, `git checkout -b {new branch name} main`
-1. make your changes and save
-1. check it builds successfully, `yarn build`
-1. check to see which files have changed, `git status`
-1. stage these changed files in git, `git add file1 file2 ...`
-1. commit your changes, `git commit -m "Made the following changes..."`
-1. push your commits and branch to your fork, `git push origin {new branch name}`
-1. [create a Pull Request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) on GitHub
-1. add a description about what you changed and anything the maintainers need to know
-
-## Standardize frontmatter
-
-Markdown documents can use the Markdown FrontMatter metadata fields, enclosed by a line --- on either side. We use `id`, `title`, `sidebar_position`, and `description`. However, we do NOT use `slug` for it.
-
-## Releases
-
-### Build
-
-To create a production build, use:
-
-```console
-yarn build
-```
-
-This command generates static content in the `build/` directory and can be served using any static contents hosting service, for example: GitHub Pages.
-
-### Deployment
-
-To build and deploy to GitHub Pages:
+To generate a repository secrete for the deployment script:
 
 1. Create a personal access token (PAT). Follow instructions found here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
-   - Select repo scope for the token
-   - Copy the PAT
+   * Select repo scope for the token
+   * Copy the PAT
 
 2. Add the personal access token as a secret to your repo
-   - Click Settings Tab
-   - Select Secrets->Actions
+   * Click Settings Tab
+   * Select Secrets->Actions
      ![](static/img/secrets1.png)
-   - Create a new repository secret
-   - Name the secrete OER_DEPLOY
-   - Paste the PAT from previous step into the Value box
+   * Create a new repository secret
+   * Name the secrete OER_DEPLOY
+   * Paste the PAT from previous step into the Value box
      ![](static/img/secrets2.png)
 
-#### A Shortcut To Update Your gh-pages:
+3. Go to the Actions Tab
+   * You will likely see a red x beside a run labelled Initial commit
+   * Click the Initial Commit link
+   * Hit the rerun jobs button
+   
+Remember to update the following files as you see fit:
 
-To deploy your updates to Github Pages, run:
+a) LICENSE.md
+b) CONTRIBUTE.md
+c) README.md
+d) package.json (name)
+e) docusaurus.config.js
+f) CNAME 
 
-- For Bash:
+Remember to run prettier after you make the changes to your files
 
-```console
-   GIT_USER=<GITHUB_USERNAME> yarn deploy
-```
-
-- For Windows
-
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-- For Powershell
-
-```console
-cmd /C 'set "GIT_USER=<GITHUB_USERNAME>" && yarn deploy'
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
-
-## Miscellanous
-
-### Tutorial for Converting Table-like Diagrams into Images
-
-To prevent table diagrams overflowing (and having the horizontal scrollbar on narrower viewports),
-we use a simple technique to convert them to images. This allows us to have responsive diagrams
-with less effort and minimizes HTML syntax on our pages.
-
-Tool Recommendation: Firefox Browser (easier to make screenshots)
-
-1. Run the app (`npm run start`)
-
-2. Go to the browser
-
-3. Go where the table you want to convert is
-
-4. Right click, select "Take Screenshot"
-
-![](static/img/take-screenshot.png)
-
-5. Select an area that encloses the whole table
-
-![](static/img/click-to-select-region.png)
-
-6. Make any adjustments necessary when cropping (avoid having unnecessary space)
-
-7. Click Download
-
-![](static/img/download-selected-region.png)
-
-8. Save image to the `/static/img` folder in the repo
-
-9. This is how it should end up looking like:
-
-![](static/img/result-of-converted-table.png)
-
-10. Use markdown to place the image wherever you need:
-
-```
-!["Alt test for accessibility"](/img/name-of-the-image.png)
-```
