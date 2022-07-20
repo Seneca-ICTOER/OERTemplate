@@ -74,11 +74,11 @@ To build and deploy to GitHub Pages:
 2. Add the personal access token as a secret to your repo
    - Click Settings Tab
    - Select Secrets->Actions
-     ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/secrets1.png)
+     ![](static/img/secrets1.png)
    - Create a new repository secret
    - Name the secrete OER_DEPLOY
    - Paste the PAT from previous step into the Value box
-     ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/secrets2.png)
+     ![](static/img/secrets2.png)
 
 #### A Shortcut To Update Your gh-pages:
 
@@ -122,26 +122,26 @@ Tool Recommendation: Firefox Browser (easier to make screenshots)
 
 4. Right click, select "Take Screenshot"
 
-![](https://seneca-ictoer.github.io/OERResources/OERTemplate/take-screenshot.png)
+![](static/img/take-screenshot.png)
 
 5. Select an area that encloses the whole table
 
-![](https://seneca-ictoer.github.io/OERResources/OERTemplate/click-to-select-region.png)
+![](static/img/click-to-select-region.png)
 
 6. Make any adjustments necessary when cropping (avoid having unnecessary space)
 
 7. Click Download
 
-![](https://seneca-ictoer.github.io/OERResources/OERTemplate/download-selected-region.png)
+![](static/img/download-selected-region.png)
 
 8. Save image to the `/static/img` folder in the repo
 
 9. This is how it should end up looking like:
 
-![](https://seneca-ictoer.github.io/OERResources/OERTemplate/result-of-converted-table.png)
+![](static/img/result-of-converted-table.png)
 
 10. Use markdown to place the image wherever you need:
 
 ```
-!["Alt test for accessibility"](/static/img/imagename)
+!["Alt test for accessibility"](/img/name-of-the-image.png)
 ```
