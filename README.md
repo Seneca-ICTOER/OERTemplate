@@ -63,8 +63,8 @@ Remember to run prettier after you make changes to your files
 
 ## Writing Your OER
 
-* To add content to your OER, edit the files in the docs folder.
-* You can add folders and more md files if you wish
-* Save, add, commit and push your updated files back into github
-* Doing this will automatically start the deployment script which will build the Docusaurus based OER. The published URL should be what is stated in the CNAME file (although if you didn't change it there will be an error, the url can be found in the repos setting tab->pages)
-* **The published page is public, even if your repo is private**
+- To add content to your OER, edit the files in the docs folder.
+- You can add folders and more md files if you wish
+- Save, add, commit and push your updated files back into github
+- Doing this will automatically start the deployment script which will build the Docusaurus based OER. The published URL should be what is stated in the CNAME file (although if you didn't change it there will be an error, the url can be found in the repos setting tab->pages)
+- **The published page is public, even if your repo is private**
