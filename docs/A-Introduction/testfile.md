@@ -118,7 +118,7 @@ int main(void){
 
 Latex in admonition block
 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 Internal:
 ![The docusaurus.jpg Image](../../static/img/docusaurus.png)
@@ -143,7 +143,7 @@ int main(void){
 
 Latex in admonition block
 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 Internal:
 
@@ -159,6 +159,6 @@ External:
 
 | col 1 | col 2                                                        | col 3                                                                        |
 | ----- | ------------------------------------------------------------ | ---------------------------------------------------------------------------- |
-| r1-c1 | r1-c2                                                        | r1-c3                                                                        |
-| r2-c1 | ![The docusaurus.jpg Image](../../static/img/docusaurus.png) | r2-c3                                                                        |
+| r1-c1 | $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$                                                        | r1-c3                                                                        |
+| $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$ | ![The docusaurus.jpg Image](../../static/img/docusaurus.png) | r2-c3                                                                        |
 | r3-c1 | r3-c2                                                        | ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/docusaurus.png) |
