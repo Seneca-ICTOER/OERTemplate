@@ -13,9 +13,9 @@ This template repository is set up for you to create and deploy an OER customize
 
 This is a screenshot of the recommended set of settings for an initial repository:
 
-![](https://seneca-ictoer.github.io/OERResources/OERTemplate/templatesettings.png)
+![](static/img/templatesettings.png)
 
-Once you are happy with your settings, hit the Create repository from template button.
+Once you are happy with your settings, hit the "Create repository from template" button.
 
 When you first create your repository, the deployment script will run automatically. However, it will likely fail as you will need to generate a repository secret for deploying the OER first.
 
@@ -30,11 +30,11 @@ To generate a repository secret for the deployment script:
 
    - Click Settings Tab
    - Select Secrets->Actions
-     ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/secrets1.png)
+     ![](static/img/secrets1.png)
    - Create a new repository secret
    - Name the secret OER_DEPLOY
    - Paste the PAT from previous step into the Value box
-     ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/secrets2.png)
+     ![](static/img/secrets2.png)
 
 3. Go to the Actions Tab
    - You will likely see a red x beside a run labelled Initial commit
@@ -63,8 +63,8 @@ Remember to run prettier after you make changes to your files
 
 ## Writing Your OER
 
-- To add content to your OER, edit the files in the docs folder.
-- You can add folders and more md files if you wish
-- Save, add, commit and push your updated files back into github
-- Doing this will automatically start the deployment script which will build the Docusaurus based OER. The published URL should be what is stated in the CNAME file (although if you didn't change it there will be an error, the url can be found in the repos setting tab->pages)
-- **The published page is public, even if your repo is private**
+* To add content to your OER, edit the files in the docs folder.
+* You can add folders and more md files if you wish
+* Save, add, commit and push your updated files back into github
+* Doing this will automatically start the deployment script which will build the Docusaurus based OER. The published URL should be what is stated in the CNAME file (although if you didn't change it there will be an error, the url can be found in the repos setting tab->pages)
+* **The published page is public, even if your repo is private**
