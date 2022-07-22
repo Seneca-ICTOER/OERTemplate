@@ -12,7 +12,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ## Header 2
 
 - unordered list 1
-  1.  inline LaTex: $ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $
+  1.  inline LaTex: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
 - unordered list 2
   1.  ordered sublist 1
   1.  ordered sublist 2
@@ -47,7 +47,8 @@ int main(void){
 # LaTex
 
 When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 # Admonitions
 
@@ -66,7 +67,9 @@ int main(void){
 ```
 
 Latex in admonition block
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+
 Internal:
 ![The docusaurus.jpg Image](../../static/img/docusaurus.png)
 
@@ -89,7 +92,9 @@ int main(void){
 ```
 
 Latex in admonition block
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+
 Internal:
 ![The docusaurus.jpg Image](../../static/img/docusaurus.png)
 
@@ -112,7 +117,9 @@ int main(void){
 ```
 
 Latex in admonition block
+
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
 Internal:
 ![The docusaurus.jpg Image](../../static/img/docusaurus.png)
 
@@ -135,11 +142,15 @@ int main(void){
 ```
 
 Latex in admonition block
+
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
 Internal:
+
 ![The docusaurus.jpg Image](../../static/img/docusaurus.png)
 
 External:
+
 ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/docusaurus.png)
 
 :::
