@@ -11,6 +11,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Header 2
 
+- unordered list 1
+  1.  inline LaTex: $ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $
+- unordered list 2
+  1.  ordered sublist 1
+  1.  ordered sublist 2
+- unordered list 3
+  - sublist 1
+  - sublist 2
+
 ### Header 3
 
 #### Header 4
@@ -21,6 +30,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Internal:
 ![The docusaurus.jpg Image](static/img/docusaurus.png)
+
+External:
+![](https://seneca-ictoer.github.io/OERResources/OERTemplate/docusaurus.png)
 
 # Syntax highlighting:
 
@@ -43,23 +55,72 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 A note block
 
+code in admonition block
+
+```c++
+#include <iostream>
+int main(void){
+	std::cout << "hello world" << std::endl;
+	return 0;
+}
+```
+
+Latex in admonition block
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
 :::
 
 :::tip
 
 A tip block
+code in admonition block
+
+```c++
+#include <iostream>
+int main(void){
+	std::cout << "hello world" << std::endl;
+	return 0;
+}
+```
+
+Latex in admonition block
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 :::
 
 :::caution
 
 A caution block
+code in admonition block
+
+```c++
+#include <iostream>
+int main(void){
+	std::cout << "hello world" << std::endl;
+	return 0;
+}
+```
+
+Latex in admonition block
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 :::
 
 :::danger
 
 a danger block
+code in admonition block
+
+```c++
+#include <iostream>
+int main(void){
+	std::cout << "hello world" << std::endl;
+	return 0;
+}
+```
+
+Latex in admonition block
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 :::
 
