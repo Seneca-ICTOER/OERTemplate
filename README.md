@@ -13,7 +13,7 @@ This template repository is set up for you to create and deploy an OER customize
 
 This is a screenshot of the recommended set of settings for an initial repository:
 
-![](static/img/templatesettings.png)
+![](https://seneca-ictoer.github.io/OERResources/OERTemplate/templatesettings.png)
 
 Once you are happy with your settings, hit the "Create repository from template" button.
 
@@ -30,11 +30,11 @@ To generate a repository secret for the deployment script:
 
    - Click Settings Tab
    - Select Secrets->Actions
-     ![](static/img/secrets1.png)
+     ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/secrets1.png)
    - Create a new repository secret
    - Name the secret OER_DEPLOY
    - Paste the PAT from previous step into the Value box
-     ![](static/img/secrets2.png)
+     ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/secrets2.png)
 
 3. Go to the Actions Tab
    - You will likely see a red x beside a run labelled Initial commit
