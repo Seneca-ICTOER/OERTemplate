@@ -13,13 +13,13 @@ This template repository is set up for you to create and deploy an OER customize
 
 This is a screenshot of the recommended set of settings for an initial repository:
 
-![](static/img/templatesettings.png)
+![](https://seneca-ictoer.github.io/OERResources/OERTemplate/templatesettings.png)
 
-Once you are happy with your settings, hit the Create repository from template button.
+Once you are happy with your settings, hit the "Create repository from template" button.
 
 When you first create your repository, the deployment script will run automatically. However, it will likely fail as you will need to generate a repository secret for deploying the OER first.
 
-To generate a repository secrete for the deployment script:
+To generate a repository secret for the deployment script:
 
 1. Create a personal access token (PAT). Follow instructions found here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
@@ -30,18 +30,18 @@ To generate a repository secrete for the deployment script:
 
    - Click Settings Tab
    - Select Secrets->Actions
-     ![](static/img/secrets1.png)
+     ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/secrets1.png)
    - Create a new repository secret
-   - Name the secrete OER_DEPLOY
+   - Name the secret OER_DEPLOY
    - Paste the PAT from previous step into the Value box
-     ![](static/img/secrets2.png)
+     ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/secrets2.png)
 
 3. Go to the Actions Tab
    - You will likely see a red x beside a run labelled Initial commit
    - Click the Initial Commit link
    - Hit the rerun jobs button
 
-## Files that Require changes:
+## Files You Must Update:
 
 - CNAME
   - CNAME needs to be changed to match the deployment url of your books. If your book is part of the ICTOER org, then change:
@@ -51,7 +51,7 @@ To generate a repository secrete for the deployment script:
 - docusaurus.config.js
   - Multiple fields that refer to this template needs to change to refer to your repository
 
-## Files that you should review
+## Files You Should Review
 
 - LICENSE.md - Current license is a generic license. Please update to suit your needs
 - CONTRIBUTE.md - Rewrite to match your contribution workflow
@@ -59,12 +59,12 @@ To generate a repository secrete for the deployment script:
 
 ## Prettier
 
-Remember to run prettier after you make the changes to your files
+Remember to run prettier after you make changes to your files
 
-## Writing your OER
+## Writing Your OER
 
 - To add content to your OER, edit the files in the docs folder.
 - You can add folders and more md files if you wish
 - Save, add, commit and push your updated files back into github
-- Doing this will automatically start the deployment script which will build the Docusaurus based OER. The URL should be that found in CNAME (although if you didn't change it there will be an error, the url can be found in the repos setting tab->pages)
+- Doing this will automatically start the deployment script which will build the Docusaurus based OER. The published URL should be what is stated in the CNAME file (although if you didn't change it there will be an error, the url can be found in the repos setting tab->pages)
 - **The published page is public, even if your repo is private**
