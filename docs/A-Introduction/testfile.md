@@ -146,8 +146,8 @@ External:
 
 # Table
 
-| col 1 | col 2 | col 3 |
-| ----- | ----- | ----- |
-| r1-c1 | r1-c2 | r1-c3 |
-| r2-c1 | ![The docusaurus.jpg Image](static/img/docusaurus.png) | r2-c3 |
-| r3-c1 | r3-c2 | ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/docusaurus.png) |
+| col 1 | col 2                                                  | col 3                                                                        |
+| ----- | ------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| r1-c1 | r1-c2                                                  | r1-c3                                                                        |
+| r2-c1 | ![The docusaurus.jpg Image](static/img/docusaurus.png) | r2-c3                                                                        |
+| r3-c1 | r3-c2                                                  | ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/docusaurus.png) |
