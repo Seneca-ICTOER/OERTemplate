@@ -36,7 +36,7 @@ External:
 
 # Syntax highlighting:
 
-```c++
+```cpp
 #include <iostream>
 int main(void){
 	std::cout << "hello world" << std::endl;
@@ -58,7 +58,7 @@ A note block
 
 code in admonition block
 
-```c++
+```cpp
 #include <iostream>
 int main(void){
 	std::cout << "hello world" << std::endl;
@@ -83,12 +83,8 @@ External:
 A tip block
 code in admonition block
 
-```c++
-#include <iostream>
-int main(void){
-	std::cout << "hello world" << std::endl;
-	return 0;
-}
+```python
+print("This line will be printed.")
 ```
 
 Latex in admonition block
@@ -108,7 +104,7 @@ External:
 A caution block
 code in admonition block
 
-```c++
+```cpp
 #include <iostream>
 int main(void){
 	std::cout << "hello world" << std::endl;
@@ -133,7 +129,7 @@ External:
 a danger block
 code in admonition block
 
-```c++
+```cpp
 #include <iostream>
 int main(void){
 	std::cout << "hello world" << std::endl;
