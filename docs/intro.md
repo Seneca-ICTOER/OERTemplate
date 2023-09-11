@@ -1,27 +1,21 @@
 ---
 id: intro
-title: Table of contents
+title: Introduction
 sidebar_position: 1
 slug: /
 description: Contents of (course notes title here)
 ---
 
-# Table of contents
+# Introduction
 
-## Introduction <a id="part-a-introduction"></a>
+This is a demonstration of a docusaurus template that we use to create OER's.
 
-- [Test Page](A-Introduction/testfile.md)
-- [Topic 2](A-Introduction/topic-file-2.md)
-- [Topic 3](A-Introduction/topic-file-3.md)
+## PDF version of these notes:
 
-## SubSection2
+A pdf version of these notes can be found here:
 
-- [Topic 1](B-SubSection2/topic-file-1.md)
-- [Topic 2](B-SubSection2/topic-file-2.md)
-- [Topic 3](B-SubSection2/topic-file-3.md)
+https://seneca-ictoer.github.io/OERTemplate/pdf/OERTemplate.pdf
 
-## SubSection3
+## PDF Generator
 
-- [Topic 1](C-SubSection3/topic-file-1.md)
-- [Topic 2](C-SubSection3/topic-file-2.md)
-- [Topic 3](C-SubSection3/topic-file-3.md)
+The pdf version of these notes were created using pdf-prince plugin and Prince 14 which is available here: http://www.princexml.com/
