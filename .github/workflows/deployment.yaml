@@ -34,6 +34,9 @@ jobs:
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
 
+      # erase everything below this comment if you do not wish to generate a pdf for the OER
+      # If you want to generate a pdf, alter lines 55 and 58.
+
       - uses: actions/checkout@v4
         with:
           ref: gh-pages
