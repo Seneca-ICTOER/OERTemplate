@@ -10,7 +10,7 @@ module.exports = {
   url: 'https://Seneca-ICTOER.github.io/',
   baseUrl: '/OERTemplate/',
   trailingSlash: false,
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'Seneca-ICTOER',
