@@ -33,3 +33,31 @@ jobs:
           # You can swap them out with your own user credentials.
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      # erase everything below this comment if you do not wish to generate a pdf for the OER
+      # If you want to generate a pdf, alter lines 55 and 58.
+
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Install Prince
+        run: |
+          curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
+          tar zxf prince-14.2-linux-generic-x86_64.tar.gz
+          cd prince-14.2-linux-generic-x86_64
+          yes "" | sudo ./install.sh
+
+      - name: Build PDF
+        run: npx docusaurus-prince-pdf -u https://seneca-ictoer.github.io/OERTemplate/
+
+      - name: rename
+        run: mv ./pdf/seneca-ictoer.github.io-OERTemplate.pdf ./pdf/OERTemplate.pdf
+
+      - name: Push pdf
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add ./pdf
+          git commit -m "add pdf file"
+          git push origin gh-pages
