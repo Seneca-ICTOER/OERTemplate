@@ -7,13 +7,13 @@ const katex = require('rehype-katex');
 module.exports = {
   title: 'OER Course Title',
   tagline: 'OER Tag/Keyword',
-  url: 'https://Seneca-ICTOER.github.io/',
+  url: 'https://catherine-leung.github.io/',
   baseUrl: '/OERTemplate/',
   trailingSlash: false,
-  onBrokenLinks: 'ignore',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Seneca-ICTOER',
+  organizationName: 'catherine-leung',
   projectName: 'OERTemplate',
   themeConfig: {
     navbar: {
