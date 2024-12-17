@@ -14,7 +14,7 @@ This is a demonstration of a docusaurus template that we use to create OER's.
 
 A pdf version of these notes can be found here:
 
-[pdf version of these notes](pdf/OERTemplate.pdf)
+[pdf version of these notes](https://seneca-ictoer.github.io/OERTemplate/pdf/OERTemplate.pdf)
 
 ## PDF Generator
 
