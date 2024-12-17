@@ -1,5 +1,5 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
@@ -19,7 +19,7 @@ module.exports = {
     navbar: {
       title: 'OER Course Title',
       logo: {
-        alt: 'Seneca College',
+        alt: 'Seneca Polytechnic',
         src: 'img/logo.svg',
         srcDark: 'img/logo-dark.svg',
       },
@@ -43,7 +43,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Seneca College.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Seneca Polytechnic.`,
     },
     prism: {
       theme: lightCodeTheme,
