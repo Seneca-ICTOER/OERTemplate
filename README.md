@@ -50,6 +50,14 @@ To generate a repository secret for the deployment script:
   - Change the name field to match your repo name
 - docusaurus.config.js
   - Multiple fields that refer to this template needs to change to refer to your repository
+- .github/workflows/deployment.yml
+  - the deployment script includes a pdf generator
+  - if you wish to generate a pdf version of the notes:
+    - modify lines 55 and 58 to match your repo url and pdf file names
+    - Note that that the pdf generator blurb with link to prince-pdf in intro.md is required as part of the licencing terms, so do not erase it.
+  - if you do not wish to use the pdf generator:
+    - erase lines 39 - the end of file.
+    - alter docs/intro.md and erase the two sections related to pdf and pdf generator
 
 ## Files You Should Review
 
