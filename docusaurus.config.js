@@ -2,18 +2,19 @@ const lightCodeTheme = require('prism-react-renderer').themes.github;
 const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 const math = require('remark-math');
 const katex = require('rehype-katex');
+const toc = require('remark-toc');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'OER Course Title',
   tagline: 'OER Tag/Keyword',
-  url: 'https://catherine-leung.github.io/',
+  url: 'https://seneca-ictoer.github.io/',
   baseUrl: '/OERTemplate/',
   trailingSlash: false,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'catherine-leung',
+  organizationName: 'seneca-ictoer',
   projectName: 'OERTemplate',
   themeConfig: {
     navbar: {
@@ -30,7 +31,8 @@ module.exports = {
       },
     },
     tableOfContents: {
-      maxHeadingLevel: 4,
+      minHeadingLevel: 2,
+      maxHeadingLevel: 5,
     },
     footer: {
       style: 'dark',
@@ -38,10 +40,6 @@ module.exports = {
         {
           title: 'OER Course Title',
           items: [
-            {
-              label: 'Contents',
-              to: '/',
-            },
             {
               html: `<a href='#' id='pwa-button' class='footer__link-item' hidden>Install as an App</a>`,
             },
@@ -82,6 +80,7 @@ module.exports = {
   ],
   clientModules: [require.resolve('./pwaCustomButton.js')],
   plugins: [
+    require.resolve('docusaurus-lunr-search'),
     [
       '@docusaurus/plugin-pwa',
       {
